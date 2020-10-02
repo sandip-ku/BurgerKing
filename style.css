@@ -1,0 +1,40 @@
+.link{
+    text-align: center;
+    background-color: purple;
+    color: white;
+    width: 8%;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+}
+table td, h1{
+    text-align: center;
+}
+
+.link a{
+    text-decoration: none;
+}
+.hw{
+    width: 100%;
+}
+.link:hover{
+    background-color: green;
+    color: white;
+}
+.slides{
+    display: none;
+	width:100%;
+}
+.zoom{
+    transition: transform 0.6s;
+    text-align: center;
+}
+.zoom :hover{
+    transform: scale(1.04)
+}
+.checked{
+    color: orange;
+}
+tr .tag{
+    width: 10%;
+}

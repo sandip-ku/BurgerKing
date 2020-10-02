@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Burger Website</title>
+</head>
+
+<body>
+    <table class="hw">
+        <tr>
+            <td class="link"><a href="#">home</a></td>
+            <td class="link"><a href="#">menu</a></td>
+            <td class="link"><a href="#">about</a></td>
+            <td class="link"><a href="#">contact us</a></td>
+            <td class="link"><a href="#"> variety</a></td>
+            <td class="link"><a href="#"> feedback</a></td>
+            <td class="link"><a href="#"> singup</a></td>
+            <td class="link"><a href="#"> login</a></td>
+        </tr>
+    </table>
+    <div>
+        <img class="slides" src="picture\banner1.jpg" alt="Burger1">
+        <img class="slides" src="picture\banner2.jpg" alt="Burger2">
+        <img class="slides" src="picture\banner3.jpg" alt="Burger3">
+        <img class="slides" src="picture\banner4.jpg" alt="Burger4">
+    </div>
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("slides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 5000); // Change image every 2 seconds
+        }
+    </script>
+    <h1>Top Rated FastFoods</h1>
+    <table>
+        <tr>
+            <td width="25%" class="zoom"><img src="picture\pic1.jpg" width="85%"></td>
+            <td width=25% class="zoom"><img src="picture\pic2.jpg" width="85%"></td>
+            <td width=25% class="zoom"><img src="picture\pic3.jpg" width="85%"></td>
+        </tr>
+        <tr>
+            <td><b>
+                    <font size="4">Dosa</font>
+                </b></td>
+            <td><b>
+                    <font size="4">Samosa</font>
+                </b></td>
+            <td><b>
+                    <font size="4">Nodles</font>
+                </b></td>
+        </tr>
+        <tr>
+            <td>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </td>
+            <td>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+            </td>
+            <td>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <font size="4" color="green">Price : INR 150/-</font>
+            </td>
+            <td>
+                <font size="4" color="green">Price : INR 60/-</font>
+            </td>
+            <td>
+                <font size="4" color="green">Price : INR 100/-</font>
+            </td>
+        </tr>
+        <tr>
+            <td class="zoom"><img src="picture\pic4.jpg" width="85%"></td>
+            <td class="zoom"><img src="picture\pic5.jpg" width="85%"></td>
+            <td class="zoom"><img src="picture\pic6.jpg" width="85%"></td>
+        </tr>
+        <tr>
+            <td><b>
+                    <font size="4">Monchurian</font>
+                </b></td>
+            <td><b>
+                    <font size="4">Pasta</font>
+                </b></td>
+            <td><b>
+                    <font size="4">Burger</font>
+                </b></td>
+        </tr>
+        <tr>
+            <td>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+            </td>
+            <td>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </td>
+            <td>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <font size="4" color="green">Price : INR 130/-</font>
+            </td>
+            <td>
+                <font size="4" color="green">Price : INR 190/-</font>
+            </td>
+            <td>
+                <font size="4" color="green">Price : INR 90/-</font>
+            </td>
+        </tr>
+        <tr>
+            <td class="zoom"><img src="picture\pic7.jpg" width="85%"></td>
+            <td class="zoom"><img src="picture\pic8.jpg" width="85%"></td>
+            <td class="zoom"><img src="picture\pic9.jpg" width="85%"></td>
+        </tr>
+        <tr>
+            <td><b>
+                    <font size="4">French Fries</font>
+                </b></td>
+            <td><b>
+                    <font size="4">Pizza</font>
+                </b></td>
+            <td><b>
+                    <font size="4">Poha</font>
+                </b></td>
+        </tr>
+        <tr>
+            <td>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </td>
+            <td>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </td>
+            <td>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <font size="4" color="green">Price : INR 70/-</font>
+            </td>
+            <td>
+                <font size="4" color="green">Price : INR 100/-</font>
+            </td>
+            <td>
+                <font size="4" color="green">Price : INR 60/-</font>
+            </td>
+        </tr>
+        <tr>
+            <td class="zoom"><img src="picture\pic10.jpg" width="85%"></td>
+            <td class="zoom"><img src="picture\pic11.jpg" width="85%"></td>
+            <td class="zoom"><img src="picture\pic12.jpg" width="85%"></td>
+        </tr>
+        <tr>
+            <td><b>
+                    <font size="4">Bhelpuri</font>
+                </b></td>
+            <td><b>
+                    <font size="4">Momos</font>
+                </b></td>
+            <td><b>
+                    <font size="4">chaat</font>
+                </b></td>
+        </tr>
+        <tr>
+            <td>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </td>
+            <td>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+            </td>
+            <td>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <font size="4" color="green">Price : INR 30/-</font>
+            </td>
+            <td>
+                <font size="4" color="green">Price : INR 50/-</font>
+            </td>
+            <td>
+                <font size="4" color="green">Price : INR 40/-</font>
+            </td>
+        </tr>
+
+    </table>
+    <table border="0" bgcolor="pirple">
+        <tr>
+            <td class="tag">
+                <font color="white">Designed By - Sandip Kushwaha</font>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
